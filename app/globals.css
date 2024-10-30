@@ -19,3 +19,7 @@ body {
 .MontserratBold {
   font-family: 'Montserrat-Bold';
 }
+
+.custom-gradient {
+  background-image: linear-gradient(to right, #2A1D1C , #000);
+}
