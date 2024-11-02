@@ -1,4 +1,4 @@
-export const activityCards = [
+export const ACTIVITY_CARDS = [
     {
         title: 'Research Initiatives',
         description: 'Our team and research fellows undertake rigorous empirical and theoretical studies on a wide range of topics, from the governance of multinational corporations to the intersection of human rights, environmental law and international commercial law.'
@@ -11,4 +11,4 @@ export const activityCards = [
         title: 'Interdisciplinary Workshops',
         description: 'We host frequent workshops and symposia that bring together experts from diverse backgrounds to explore innovative approaches to complex legal challenges, fostering cross-pollination of ideas and interdisciplinary collaboration.'
     }
-]
+];

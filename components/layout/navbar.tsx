@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Links } from "@/models/navbar";
+
+import { LINKS } from "@/models/navbar";
 
 const Navbar: React.FC = () => {
     const path = usePathname();
@@ -17,11 +18,13 @@ const Navbar: React.FC = () => {
             </div>
             <ul className="flex gap-8">
                 {
-                    Links.map((link, index) => (
+                    LINKS.map((link, index) => (
                         <li
                             key={`link_${index}`}
-                            className={`text-nowrap`}>
+                                className={`relative text-nowrap text-lg ${link.path === path ? 'text-[#6F85F6]' : 'text-white'}`}
+                            style={{ textShadow: link.path === path ? '0px 0px 16px #6F85F6' : undefined }}>
                             <Link href={link.path}>{link.title}</Link>
+                            {link.path === path && <div className={`absolute h-0.5 w-full bottom-0 animated-line bg-[#6F85F6]`}></div>}
                         </li>
                     ))
                 }

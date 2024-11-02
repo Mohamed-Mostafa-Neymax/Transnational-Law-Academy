@@ -1,4 +1,4 @@
-export const Links = [
+export const LINKS = [
     { title: 'Home', path: '/' },
     { title: 'Our Founder', path: '/our-founder' },
     { title: 'Our People', path: '/our-people' },

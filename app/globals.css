@@ -23,3 +23,31 @@ body {
 .custom-gradient {
   background-image: linear-gradient(to right, #2A1D1C , #000);
 }
+
+.custom-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.partnership-filter {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.animated-line {
+  left: -70px;
+  animation-name: MoveLine;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes MoveLine {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 0px;
+  }
+}
