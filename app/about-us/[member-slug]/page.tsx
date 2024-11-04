@@ -1,6 +1,4 @@
-import MemberDetails from "@/components/about-us/member-details";
-
-const MemberDetailsPage: React.FC<{params: { 'member-slug': string; }}> = ({ params }) => {
+const MemberDetailsPage: React.FC = () => {
 
     return (
         <section className="pt-5 lg:pt-14 2xl:pt-20">
@@ -8,9 +6,6 @@ const MemberDetailsPage: React.FC<{params: { 'member-slug': string; }}> = ({ par
                 <h1 className="text-center text-[#6F85F6] text-xl MontserratBold">This Page is under development</h1>
             </section>
         </section>
-        // <section className="pt-5 lg:pt-14 2xl:pt-20">
-        //     <MemberDetails slug={params['member-slug']} />
-        // </section>
     )
 }
 
