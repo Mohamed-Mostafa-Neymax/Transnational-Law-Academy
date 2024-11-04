@@ -21,7 +21,7 @@ body {
 }
 
 .custom-gradient {
-  background-image: linear-gradient(to right, #2A1D1C , #000);
+  background-image: linear-gradient(to right, #2A1D1C, #000);
 }
 
 .custom-bg {
@@ -47,7 +47,53 @@ body {
   from {
     left: -100px;
   }
+
   to {
     left: 0px;
+  }
+}
+
+.toLeft {
+  animation-name: ToLeft;
+  left: -200px;
+  opacity: 0;
+}
+
+.toRight {
+  animation-name: ToRight;
+  left: 200px;
+  opacity: 0;
+}
+
+.toLeft,
+.toRight {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes ToLeft {
+  from {
+    left: -200px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes ToRight {
+  from {
+    left: 200px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0px;
+    opacity: 1;
   }
 }

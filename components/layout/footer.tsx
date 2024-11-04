@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
             <div className="px-5 py-12 lg:px-10 lg:py-20 2xl:px-80 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
                 <div>
                     <div className="flex justify-center mb-3 2xl:mb-6">
-                        <Image src='/images/logo.PNG' width={180} height={80} alt="Transnational Law Academy Logo" />
+                        <Image src='/images/logo.png' width={180} height={80} alt="Transnational Law Academy Logo" />
                     </div>
                     <p className="text-lg xl:text-xl">
                         Join our program in International Law and the Settlement of Disputes, focusing on the role of international law in dispute resolution.

@@ -17,7 +17,7 @@ const Header: React.FC = () => {
                         <SwiperSlide key={`slide${index}`}>
                             <div
                                 className='w-full h-[500px] lg:h-[850px] text-white custom-bg'
-                                style={{ backgroundImage: 'url(/images/slide.PNG)' }}>
+                                style={{ backgroundImage: 'url(/images/slide.png)' }}>
                                 <div className='h-full w-full flex items-center partnership-filter'>
                                     <div className='px-16 lg:pl-24 2xl:pl-80'>
                                         <h1 className='text-4xl 2xl:text-7xl leading-normal MontserratBold mb-5 xl:mb-8'>{slide.title}</h1>

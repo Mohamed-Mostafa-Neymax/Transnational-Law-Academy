@@ -35,7 +35,6 @@ const Advantages: React.FC = () => {
                     }
                 </ul>
             </div>
-
         </section>
     )
 }

@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
             transition-all duration-500 ease-in-out w-full hidden lg:flex justify-between items-center font-bold px-5 lg:px-10 2xl:px-80 fixed top-0 z-10 py-2 text-white text-xs 2xl:text-lg`
             }>
                 <div className={`flex flex-col items-center text-center`}>
-                    <Image src='/images/logo.PNG' width={80} height={60} alt="Transnational Law Academy Logo" />
+                    <Image src='/images/logo.png' width={80} height={60} alt="Transnational Law Academy Logo" />
                     <p>Transnational Law Academy</p>
                 </div>
                 <ul className="flex gap-6">
@@ -54,10 +54,10 @@ const Navbar: React.FC = () => {
                 </ul>
             </nav>
             <nav className={`flex lg:hidden bg-black text-white p-2 overflow-hidden ${isMenuOpened ? 'h-screen w-full' : 'h-14 w-14'} rounded-br-full fixed top-0 z-10 transition-all duration-300 ease-in-out`}>
-                <MdOutlineMenu size={30} onClick={() => { setIsMenuOpened(prevState => !prevState) }} />
+                <MdOutlineMenu size={30} onClick={() => { setIsMenuOpened(prevState => !prevState) }} className="cursor-pointer" />
                 <div className={`${isMenuOpened ? 'flex' : 'hidden'} flex-col items-center gap-10 w-full`}>
                     <div>
-                        <Image src='/images/logo.PNG' width={80} height={60} alt="Transnational Law Academy Logo" />
+                        <Image src='/images/logo.png' width={80} height={60} alt="Transnational Law Academy Logo" />
                     </div>
                     <ul className={`flex flex-col items-center gap-3`}>
                         {
