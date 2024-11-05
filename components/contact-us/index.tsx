@@ -34,7 +34,7 @@ const ContactUs: React.FC = () => {
                     </div>
                     <button
                         type='submit'
-                        className='hover:bg-[#6F85F6] text-nowrap hover:text-black transition-all duration-150 ease-in-out text-[#6F85F6] border-4 border-solid border-[#6F85F6] bg-black text-xs lg:text-lg 2xl:text-2xl font-bold rounded-[30px] p-5'>Send Your Message</button>
+                        className='hover:bg-[#6F85F6] text-nowrap hover:text-black transition-all duration-150 ease-in-out text-[#6F85F6] border-4 border-solid border-[#6F85F6] bg-black text-xs lg:text-lg font-bold rounded-[30px] p-5'>Send Your Message</button>
                 </form>
             </div>
             <div className="flex justify-center">
