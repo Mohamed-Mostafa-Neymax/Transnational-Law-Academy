@@ -9,8 +9,7 @@ const Activities: React.FC = () => {
                     ACTIVITY_CARDS.map((activity, index) => (
                         <li
                             key={`activity_${index}`}
-                            className="border border-solid border-[EAEAEA] p-6 rounded-3xl"
-                            style={{boxShadow: '0 6px 24px #00000014'}}>
+                            className="border border-solid border-[EAEAEA] p-6 rounded-3xl shadow-lg">
                             <h2 className="text-xl 2xl:text-2xl font-bold text-[#6F85F6] mb-3 2xl:mb-5 2xl:min-h-16">{activity.title}</h2>
                             <p className="text-lg xl:text-xl">{activity.description}</p>
                         </li>

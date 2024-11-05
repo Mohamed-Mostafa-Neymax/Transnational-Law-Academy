@@ -1,10 +1,12 @@
 'use client';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { FaArrowRightLong } from "react-icons/fa6";
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 import { OFFICIAL_MEMBERS } from '@/models/members';
 
@@ -13,6 +15,8 @@ const OfficialMembers: React.FC = () => {
         <section className="px-5 py-12 lg:px-10 lg:py-20 2xl:px-80 2xl:py-32 bg-[#F7F7F7]">
             <h1 className="MontserratBold text-xl lg:text-3xl 2xl:text-5xl mb-8 2xl:mb-16 text-[#6F85F6]">Official Members</h1>
             <Swiper
+                pagination={{ dynamicBullets: true }}
+                modules={[Pagination]}
                 breakpoints={{
                     768: {
                         slidesPerView: 1,
@@ -27,7 +31,7 @@ const OfficialMembers: React.FC = () => {
                 {
                     OFFICIAL_MEMBERS.map(member => (
                         <SwiperSlide key={member.slug}>
-                            <div className='mx-2 xl:mx-5'>
+                            <div className='mx-2 xl:mx-5 py-4'>
                                 <div className='flex gap-5 border border-solid border-[#EAEAEA] p-6 rounded-3xl hover:shadow-lg hover:bg-[#ffffff80]'>
                                     <div>
                                         <Image

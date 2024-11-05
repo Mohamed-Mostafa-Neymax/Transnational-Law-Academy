@@ -97,3 +97,7 @@ body {
     opacity: 1;
   }
 }
+
+.swiper-pagination {
+  position: relative !important;
+}
