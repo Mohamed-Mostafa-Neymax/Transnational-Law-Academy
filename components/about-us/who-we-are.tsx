@@ -3,7 +3,7 @@ import Image from "next/image";
 const WhoWeAre: React.FC = () => {
 
     return (
-        <section className="px-5 py-12 lg:px-10 lg:py-20 2xl:px-80 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <section className="px-5 md:px-10 2xl:px-52 py-12 lg:py-20 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="flex justify-center relative toLeft">
                 <div>
                     <Image src='/images/about-us.png' width={600} height={600} alt="About Transnational Law Academy" />

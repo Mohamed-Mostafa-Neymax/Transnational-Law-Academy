@@ -14,7 +14,7 @@ const ADVANTAGES_POINTS = [
 const Advantages: React.FC = () => {
 
     return (
-        <section className="px-5 py-12 lg:px-10 lg:py-20 2xl:px-80 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <section className="px-5 py-12 md:px-10 lg:py-20 2xl:px-52 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="flex justify-center">
                 <div>
                     <Image src='/images/about-us.png' width={600} height={600} alt="About Transnational Law Academy" />

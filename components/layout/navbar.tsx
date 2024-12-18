@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { MdOutlineMenu } from 'react-icons/md';
 
-import { LINKS } from "@/models/navbar";
-import { useEffect, useState } from "react";
+import { LINKS } from "@/constants/navbar";
 
 const Navbar: React.FC = () => {
     const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
     };
 
     useEffect(() => {
-        setIsMenuOpened(prevvState => false);
+        setIsMenuOpened(false);
         if (path === '/')
             window.addEventListener('scroll', bgScrollHandler);
         return () => {
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
         <>
             <nav className={
                 `${navHasBg || path !== '/' ? 'bg-black' : 'bg-transparent'} 
-            transition-all duration-500 ease-in-out w-full hidden lg:flex justify-between items-center font-bold px-5 lg:px-10 2xl:px-80 fixed top-0 z-10 py-2 text-white text-xs 2xl:text-lg`
+            transition-all duration-500 ease-in-out w-full hidden lg:flex justify-between items-center font-bold px-5 md:px-10 2xl:px-52 fixed top-0 z-10 py-2 text-white text-xs 2xl:text-lg`
             }>
                 <div className={`flex flex-col items-center text-center`}>
                     <Image src='/images/logo.png' width={80} height={60} alt="Transnational Law Academy Logo" />

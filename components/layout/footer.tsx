@@ -3,7 +3,7 @@ import Image from "next/image";
 const Footer: React.FC = () => {
     return (
         <footer className="text-white bg-[#202942]">
-            <div className="px-5 py-12 lg:px-10 lg:py-20 2xl:px-80 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
+            <div className="px-5 py-12 md:px-10 lg:py-20 2xl:px-52 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-10">
                 <div>
                     <div className="flex justify-center mb-3 2xl:mb-6">
                         <Image src='/images/logo.png' width={180} height={80} alt="Transnational Law Academy Logo" />
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                     <p>+447466383242</p>
                 </div>
             </div>
-            <div className="border-t px-5 lg:px-10 2xl:px-80 py-5 border-solid border-white text-center text-lg xl:text-xl">
+            <div className="border-t px-5 md:px-10 2xl:px-52 py-5 border-solid border-white text-center text-lg xl:text-xl">
                 &copy; 2024 Transnational Law Academy All rights reserved.
             </div>
         </footer>

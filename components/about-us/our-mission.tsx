@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import { MISSION } from "@/models/ours";
+import { MISSION } from "@/constants/ours";
 
 const OurMission: React.FC = () => {
     return (
-        <section className="px-5 py-12 lg:px-10 lg:py-20 2xl:px-80 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <section className="px-5 py-12 md:px-10 lg:py-20 2xl:px-52 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div>
                 <h1 className="MontserratBold text-xl lg:text-3xl 2xl:text-5xl mb-8 2xl:mb-16 text-[#6F85F6]">Our Mission</h1>
                 <ul className="text-xl flex flex-col gap-5">

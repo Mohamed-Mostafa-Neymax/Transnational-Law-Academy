@@ -1,8 +1,8 @@
-import { OURS } from "@/models/ours";
+import { OURS } from "@/constants/ours";
 
 const OurPrivileges: React.FC = () => {
     return (
-        <section className="px-5 py-12 lg:px-10 lg:py-20 2xl:px-80 2xl:py-32 bg-[#F7F7F7]">
+        <section className="px-5 py-12 md:px-10 lg:py-20 2xl:px-52 2xl:py-32 bg-[#F7F7F7]">
             <ul className="grid grid-cols-1 xl:grid-cols-3 gap-10 mb-3 2xl:mb-10">
                 {
                     OURS.map((event, index) => (
